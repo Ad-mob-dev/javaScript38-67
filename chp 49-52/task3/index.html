@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 43-48 task3</title>
+    <!-- css -->
+ 
+    <!-- javascript -->
+<script src="app.js"></script>
+<style>
+
+    #table{
+        display: none;
+    }
+    form{
+      margin: auto;
+      width: 100%;  
+      border:1px solid black;
+      padding: 20px;
+      background-color: black;
+        color:white;
+
+          }
+    #table>caption{
+        display: none;
+    }
+    #htr{
+        display:none;
+    }
+    input[type="text"]{
+        padding: 10px;
+        margin-left: 10px;
+        width:40%;
+        font-weight: bolder;
+          }
+          button{
+              background-color: black;
+              color: white;
+              padding: 10px;
+              font-weight: bolder;
+              border-radius: 30px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+          }
+
+
+</style>
+</head>
+<body style="text-align: center;">
+
+<form action="index.html" method="post" id="form">
+    <h1> Add Student Record</h1>
+<input type="text" placeholder="Enter Name" name="Name" id="Name">
+<input type="text" placeholder="Enter Class" name="Claxx" id="Claxx">
+
+    </form>
+    <button onclick="add()" style="margin:20px;" id="addbtn">ADD Student Detail</button>
+
+    <div id="main" style="text-align: center; margin: auto; width: auto;">
+<table id="table">
+    <caption id="cap" style="font-size: 30px;">Student Details</caption>
+    <tr id="htr">
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class<th>
+    </tr>
+</table>
+    </div>
+</body>
+</html>
